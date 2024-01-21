@@ -6,6 +6,7 @@ import { RouterLink } from "vue-router";
 const productsStore = useProducts();
 const products = ref([]);
 const isDataLoaded = ref(false);
+const search = ref("");
 
 const fetchData = async () => {
   await productsStore.fetchProducts();
